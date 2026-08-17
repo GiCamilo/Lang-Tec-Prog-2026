@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    real ladoA, ladoB, ladoAT, ladoBT, perimetro
+
+    escreva ("insira o lado A:  ")
+    leia (ladoA)
+
+    escreva (" insira o lado b:  ")
+    leia (ladoB)
+
+    ladoAT = ladoA *2
+    ladoBT = ladoB *2
+    perimetro = ladoAT + ladoBT
+
+
+    escreva ("perimetro do retangulo:  ", perimetro)
+
+
+    
+  }
+}
