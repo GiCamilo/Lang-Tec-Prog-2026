@@ -1,0 +1,172 @@
+programa {
+  funcao inicio() {
+   real a, dobro, triplo
+
+   escreva ("insira um numero:  ")
+   leia (a)
+
+
+   dobro = 2 * a
+   triplo = 3 * a
+
+
+
+   escreva("o dobro:  ", dobro)
+   escreva ( "\nO triplo:  ", triplo)
+
+
+
+
+  }
+}
+
+programa {
+  funcao inicio() {
+    real a, b, divisao
+
+
+  escreva ("insira um numero:  ")
+  leia (a)
+
+  escreva ("inira um numero:  ")
+  leia (b)
+
+  divisao = a/b
+
+  escreva ("A Divisao:  ", divisao)
+  }
+}
+
+programa {
+  funcao inicio() {
+    real a, b, vezes
+
+    escreva ("Insira um numero:  ")
+    leia (a)
+
+    escreva ("insira um numero:   ")
+    leia (b)
+
+    vezes = a * b 
+
+    escreva ( "Amultiplicação;  ", vezes)
+  }
+}
+
+programa {
+  funcao inicio() {
+    real a, b, menos
+
+    escreva ("Insira um numero:  ")
+    leia ( a )
+
+    escreva("Insira um numero:  ")
+    leia ( b )
+
+    
+    menos = a - b
+
+
+    escreva ("A subtração:  ", menos)
+
+
+  }
+}
+
+programa {
+  funcao inicio() {
+    real a, b, soma
+
+    escreva ("insira um numero:   ")
+    leia ( a )
+
+    escreva (" Insira o segundo numero:  ")
+    leia ( b )
+
+    soma = a + b
+
+    escreva (" Soma:  ", soma)
+  }
+}
+
+programa {
+  funcao inicio() {
+    real base, altura, area 
+
+    escreva ("insira a base:  ")
+    leia (base)
+
+    escreva("Insira a altura:  ")
+    leia (altura)
+
+    area = (base * altura) / 2
+
+
+    escreva ("A area do triangulo:  ", area)
+
+    
+
+  }
+}
+
+programa {
+  funcao inicio() {
+    real ladoA, ladoB, ladoAT, ladoBT, perimetro
+
+    escreva ("insira o lado A:  ")
+    leia (ladoA)
+
+    escreva (" insira o lado b:  ")
+    leia (ladoB)
+
+    ladoAT = ladoA *2
+    ladoBT = ladoB *2
+    perimetro = ladoAT + ladoBT
+
+
+    escreva ("perimetro do retangulo:  ", perimetro)
+
+
+    
+  }
+}
+
+programa {
+  funcao inicio() {
+    real ladoA, ladoB, ladoAT, ladoBT, perimetro
+
+    escreva ("insira o lado A:  ")
+    leia (ladoA)
+
+    escreva (" insira o lado b:  ")
+    leia (ladoB)
+
+    ladoAT = ladoA *2
+    ladoBT = ladoB *2
+    perimetro = ladoAT + ladoBT
+
+
+    escreva ("perimetro do retangulo:  ", perimetro)
+
+
+    
+  }
+}
+
+programa {
+  funcao inicio() {
+    real a, antecessor, sucessor
+
+    escreva ("Insira um numero:  ")
+    leia (a)
+
+    antecessor = a - 1
+
+    sucessor = a + 1
+
+    escreva ("Antecessor:   ", a -1)
+    escreva ( "\nSucessor:  ", a + 1)
+
+
+  }
+}
