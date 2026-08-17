@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    real base, altura, area 
+
+    escreva ("insira a base:  ")
+    leia (base)
+
+    escreva("Insira a altura:  ")
+    leia (altura)
+
+    area = (base * altura) / 2
+
+
+    escreva ("A area do triangulo:  ", area)
+
+    
+
+  }
+}
