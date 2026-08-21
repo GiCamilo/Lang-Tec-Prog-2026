@@ -1,0 +1,175 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	//exercicio 1
+	
+	int primeiro, segundo, aux;
+	
+	printf ("Digite o primeiro valor:  ");
+	scanf ("%d", &primeiro);
+	printf ("Digite o segundo valor:  ");
+	scanf ("%d", &segundo);
+	
+	aux = primeiro;
+	primeiro = segundo;
+	segundo = aux;
+	
+	printf ("%d \n %d", primeiro, segundo);
+	
+	
+	//exercicio 2
+	float primeiroV, resultado;
+	double numeroD;
+	
+	
+	printf ("\n" "Digite o primeiro valor:  ");
+	scanf ("%f", &primeiroV);
+
+	
+	numeroD = primeiroV + primeiroV;
+	resultado = numeroD * pow(10, 4);
+	
+	printf ("%lf", resultado);
+	
+	//exercicio 3
+	
+	int n, res;
+	int bit_64, bit_32, bit_16, bit_8, bit_4, bit_2;
+	
+	printf("\n""Insira o valor a ser convertido:   ");
+	scanf ("%d", &n);
+	
+	bit_64 = n%2;
+	res = n/2;
+	
+	bit_32 = res%2;
+	res = res/2;
+	
+	bit_16 = res%2;
+	res = res/2;
+	
+	bit_8 = res%2;
+	res = res/2;
+	
+	bit_4 = res%2;
+	res = res/2;
+	
+	bit_2 = res%2;
+	res = res/2;
+	
+	printf ("O numero %d em binario = %d%d%d%d%d%d%d", n, res%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+	
+     
+    
+     
+ 
+	
+	
+
+	
+	//exercicio 4
+	
+	
+	int  salarioF, valorT, final, comissao;
+	
+	printf  ("\n""Insira o salario fixo:   ");
+	scanf ("%d", &salarioF);
+	
+	printf ("\n""Insira o valor total de vendas:   ");
+	scanf ("%d", &valorT);
+	
+	
+	
+	comissao = 15%  valorT;
+	
+	final = salarioF + valorT + comissao;
+	
+	printf ("O valor total no fim do mes �: %d  ", final);
+	
+	
+	
+	
+	
+	//exercicio 5
+	
+	int a, b, c, d, soma, media, produto;
+	
+	
+	printf ("\n""Insira um numero:   ");
+	scanf ("%d", &a);
+	
+	printf ("Insira um numero:   ");
+	scanf ("%d", &b);
+	
+	printf ("Insira um numero:    ");
+	scanf ("%d", &c);
+	
+	printf("Insira um numero:     ");
+	scanf ("%d", &d);
+	
+	soma = a + b + c + d;
+	
+	media = ( a + b + c + d)/4;
+	
+	produto = a * b * c * d;
+	
+	printf ("A soma desses valores e:  %d", soma);
+	
+	printf ("\n"" A media desses valores e:  %d", media);
+	
+	printf ("\n""O produto desses valores e:   %d", produto);	
+	
+	
+	//exercicio 6
+	
+	int idade, anos, meses, dias;
+	
+	printf("\n""Insira a idade:  ");
+	scanf ("%d", &idade);
+	
+	
+	anos = idade;
+	meses = anos * 12;
+	dias = meses * 30;
+	
+	printf ("\n""Ele tem em anos:   %d", anos);
+	
+	printf ("\n""Ele tem em meses:   %d", meses);
+	
+	printf ("\n""Ele tem em dias:  %d", dias);
+	
+	//exercicio 7
+	
+	int  volume, raio, p;
+	
+	printf ("\n""Insira o raio da esfera:   ");
+	scanf ("%d", raio);
+	
+	
+	p = 3.14159;
+	
+	volume = (4 * p * pow(raio,3))/3;
+	
+	
+	printf ( "O volume da esfera:   %d  ", volume);
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+ 
+	
+	
+	
+	return 0;
+}
