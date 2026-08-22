@@ -1,1 +1,136 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	//exercicio 1
+	
+	int anoN, idade, anoA;
+	
+	printf(" Insira a idade atual:   ");
+	scanf("%d", &idade);
+	
+	printf("Insira o ano atual:   ");
+	scanf("%d", &anoA);
+	
+	anoN = anoA - idade;
+	
+	printf ("o ano de nascimento = %d", anoN);
+	
+	//exercicio 2
+	
+	int Km, M;
+	
+	printf ("\n""Insira a velocidade em km:   ");
+	scanf ("%d", &Km);
+	
+	
+	M = Km * 1000;
+	
+	
+	printf (" a distancia em metros = %d", M);
+	
+	//exercicio 3
+	
+	float real, dollar, valor;
+	
+	printf ("\n""Insira a quantia em real:   ");
+	scanf ("%f", &real);
+	
+	printf ("\n""Insira o valor do dollar:   ");
+	scanf ("%f", &valor);
+	
+	
+	dollar = real / valor;
+	
+	
+	
+	printf ("A quant de dollar que terei = %f",dollar);
+	
+	//exercicio 4
+	
+	float C, F;
+	
+	printf ("\n""Insira o valor em C:   ");
+	scanf ("%f", &C);
+	
+	F = C * 9/5 +32;
+	
+	printf ("\n""O valor em F = %f", F);
+	
+	//exemplo 5
+	
+	float ang, rad, p;
+	
+	printf ("\n""Insira o valor em angulos:   ");
+	scanf ("%f", &ang);
+	
+	p = 3.14159;
+	
+	rad = ang * p / 180;
+	
+	printf ("Em radianos =  %f", rad);
+	
+	//exercicio 6
+	int a, antecessor, sucessor;
+
+
+
+    printf ("\n""Insira um numero:  ");
+    scanf ("%d", &a);
+
+    antecessor = a - 1;
+
+    sucessor = a + 1;
+
+    printf ("Antecessor: %d  ", antecessor);
+    printf ( "\nSucessor: %d ", sucessor);
+    
+    
+    
+    //exercicio 7
+    
+    float primeiro, segundo, terceiro, premio;
+    
+    printf ("\n""Insira o valor do premio:   ");
+    scanf ("%f", &premio);
+    
+    
+    primeiro =  premio - 54% premio
+    segundo = 
+    terceiro = 
+    
+    printf ("\n""O primeiro recebera = %f reais", primeiro);
+    printf ("\n""o segundo recebera = %f reais", segundo);
+    printf ("\n""O terceiro recebera = %f reais", terceiro);
+    
+    //exercicio 8
+    
+    
+
+
+
+
+
+  
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	return 0;
+}
