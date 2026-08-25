@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+
+		int a, b, c;
+        int resultado;
+	
+	printf ("Insira os valores de A, B, C:   ");
+	scanf("%d %d %d", &a, &b, &c );
+	
+	if (a > b){
+		resultado = a;
+	}
+	else{
+		resultado = b;
+	}	
+	if (c > resultado){
+		resultado = c;
+	}
+
+	
+	
+	printf ("%d eh o maior", resultado);
+	
+	//exercicio 2
+	
+	int numero;
+	int r;
+	
+	printf("\n""Insira um numero:  ");
+	scanf ("\n""%d", &numero);
+	
+	if (numero > 0 ){
+	r = numero*-1;
+     }
+     else {
+     	r = numero*numero;
+	 }
+	 
+	 printf ("%d", r);
+
+
+	
+	
+	
+	return 0;
+}
