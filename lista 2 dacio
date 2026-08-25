@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -100,36 +99,54 @@ int main(int argc, char *argv[]) {
     scanf ("%f", &premio);
     
     
-    primeiro =  premio - 54% premio
-    segundo = 
-    terceiro = 
+    primeiro =  premio * 46/100;
+    segundo =  premio * 32/100;
+    terceiro = premio - (primeiro + segundo);
     
     printf ("\n""O primeiro recebera = %f reais", primeiro);
     printf ("\n""o segundo recebera = %f reais", segundo);
     printf ("\n""O terceiro recebera = %f reais", terceiro);
     
     //exercicio 8
+    int n, s, h, m;
+    
+    printf("\n""Informe o tempo em s:  ");
+    scanf("%d", &n);
+    
+    h = n / 3600;
+    m = (n % 3600) / 60;
+    s = n % 60;
+    
+    printf("\n""O horario e de:  %d %d %d", h, m, s);
     
     
-
-
-
-
-
-  
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
+    //exercicio 9 
+    float tempo, velocidade, distancia, litro;
+    
+    printf("\n""Insira o tempo percorrido:");
+    scanf("%f", &tempo);
+    
+    printf("Insira a velocidade percorrida:");
+    scanf("%f", &velocidade);
+    
+    distancia = tempo * velocidade;
+    
+    litro = distancia / 12;
+    
+    printf("O tanto de litro que sera gasto em uma viagem de %f km e: %f", distancia, litro);
+    
+    
+    
+    //exercicio 10
+    int d, b, c, maiorT, maior;
+    
+    printf ("\n""Insira os valores a serem comparados:  ");
+    scanf("%d %d %d", &d, &b, &c);
+    
+    maiorT = ((d + b )+abs(d - b))/2;
+    maior = ((maiorT + c )+ abs(maiorT -c))/2;
+    
+    printf ("\n""O maior numero entre %d %d %d e o %d", d, b, c, maior);
 	
 
 	return 0;
