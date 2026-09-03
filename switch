@@ -1,0 +1,197 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void exe1 (){
+	int anoN, idade, anoA;
+	
+	printf(" Insira a idade atual:   ");
+	scanf("%d", &idade);
+	
+	printf("Insira o ano atual:   ");
+	scanf("%d", &anoA);
+	
+	anoN = anoA - idade;
+	
+	printf ("o ano de nascimento = %d", anoN);
+	
+	
+	
+}
+
+void exe2 (){
+	
+	int Km, M;
+	
+	printf ("\n""Insira a velocidade em km:   ");
+	scanf ("%d", &Km);
+}
+
+void exe3 (){
+		float dollar, real, cota;
+       	scanf ("%f", &real);
+     	scanf ("%f", &cota);
+    	printf("%f reais em dollar = %f", real, (real/cota));
+	
+}
+
+void exe4 (){
+	
+	     float tempC, tempF;
+	
+      	scanf("%f", &tempC);
+	
+    	tempF = tempC *(9.0/5.0) + 32.0;
+	
+    	printf("A temperatura maxima de hoje na tela da globo %f", tempF);
+	
+}
+
+void exe5 (){
+	
+	float ang, rad, p;
+	
+	printf ("\n""Insira o valor em angulos:   ");
+	scanf ("%f", &ang);
+	
+	p = 3.14159;
+	
+	rad = ang * p / 180;
+	
+	printf ("Em radianos =  %f", rad);
+	
+}
+
+void exe6 (){
+	int a, antecessor, sucessor;
+
+
+
+    printf ("\n""Insira um numero:  ");
+    scanf ("%d", &a);
+
+    antecessor = a - 1;
+
+    sucessor = a + 1;
+
+    printf ("Antecessor: %d  ", antecessor);
+    printf ( "\nSucessor: %d ", sucessor);
+}
+
+void exe7 (){
+	 float primeiro, segundo, terceiro, premio;
+    
+    printf ("\n""Insira o valor do premio:   ");
+    scanf ("%f", &premio);
+    
+    
+    primeiro =  premio * 46/100;
+    segundo =  premio * 32/100;
+    terceiro = premio - (primeiro + segundo);
+    
+    printf ("\n""O primeiro recebera = %f reais", primeiro);
+    printf ("\n""o segundo recebera = %f reais", segundo);
+    printf ("\n""O terceiro recebera = %f reais", terceiro);
+}
+void exe8 (){
+	
+
+    	int segundos, minutos, horas;
+    	scanf("%d", &segundos);
+	
+    	horas = segundos/3600;
+    	minutos = (segundos - (horas*3600)) / 60;
+    	segundos = segundos - ((horas*3600) + (minutos*60));
+    	
+    	printf("Tempo %d:%d:%d \n", horas, minutos, segundos);
+}
+void exe9(){
+	
+	 float tempo, velocidade, distancia, litro;
+    
+    printf("\n""Insira o tempo percorrido:");
+    scanf("%f", &tempo);
+    
+    printf("Insira a velocidade percorrida:");
+    scanf("%f", &velocidade);
+    
+    distancia = tempo * velocidade;
+    
+    litro = distancia / 12;
+    
+    printf("O tanto de litro que sera gasto em uma viagem de %f km e: %f", distancia, litro);
+}
+
+void exe10 (){
+	 int d, b, c, maiorT, maior;
+    
+    printf ("\n""Insira os valores a serem comparados:  ");
+    scanf("%d %d %d", &d, &b, &c);
+    
+    maiorT = ((d + b )+abs(d - b))/2;
+    maior = ((maiorT + c )+ abs(maiorT -c))/2;
+    
+    printf ("\n""O maior numero entre %d %d %d e o %d", d, b, c, maior);
+	
+	
+}
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//lista 2
+
+int main(int argc, char *argv[]) {
+	int resposta;
+	printf("Qual exercicio resolver?");
+	scanf("%d", &resposta);
+	switch (resposta){
+		
+	case 1:	
+        exe1();
+	break;	
+	
+	case 2:
+		exe2();
+	break;	
+	
+	case 3:
+	     exe3();		
+	break;
+		
+	break;	
+	
+	case 4:
+		exe4 ();
+   	break;
+   	
+   	case 5:
+   		exe5 ();
+   	break;	
+   	
+   	case 6:
+   		exe6();
+   	break;
+	   
+	case 7:
+		exe7();
+	break;   	
+   	
+   	case 8:
+   		exe8 ();
+   	break;
+   	
+   	case 9:
+   		exe9();
+	break;  
+	
+	case 10:
+		exe10();
+	break;  
+   }
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
