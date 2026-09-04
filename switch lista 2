@@ -1,0 +1,218 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+void exe1(){
+	int primeiro, segundo, aux;
+	
+	printf ("Digite o primeiro valor:  ");
+	scanf ("%d", &primeiro);
+	printf ("Digite o segundo valor:  ");
+	scanf ("%d", &segundo);
+	
+	aux = primeiro;
+	primeiro = segundo;
+	segundo = aux;
+	
+	printf ("%d \n %d", primeiro, segundo);
+	
+}
+
+void exe2 (){
+	
+	float primeiroV, resultado;
+	double numeroD;
+	
+	
+	printf ("\n" "Digite o primeiro valor:  ");
+	scanf ("%f", &primeiroV);
+
+	
+	numeroD = primeiroV + primeiroV;
+	resultado = numeroD * pow(10, 4);
+	
+	printf ("%lf", resultado);
+	
+}
+
+void exe3(){
+	
+	int n, res;
+	int bit_64, bit_32, bit_16, bit_8, bit_4, bit_2;
+	
+	printf("\n""Insira o valor a ser convertido:   ");
+	scanf ("%d", &n);
+	
+	bit_64 = n%2;
+	res = n/2;
+	
+	bit_32 = res%2;
+	res = res/2;
+	
+	bit_16 = res%2;
+	res = res/2;
+	
+	bit_8 = res%2;
+	res = res/2;
+	
+	bit_4 = res%2;
+	res = res/2;
+	
+	bit_2 = res%2;
+	res = res/2;
+	
+	printf ("O numero %d em binario = %d%d%d%d%d%d%d", n, res%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+}
+
+void exe4(){
+	
+	int  salarioF, valorT, final, comissao;
+	
+	printf  ("\n""Insira o salario fixo:   ");
+	scanf ("%d", &salarioF);
+	
+	printf ("\n""Insira o valor total de vendas:   ");
+	scanf ("%d", &valorT);
+	
+	
+	
+	comissao = 15%  valorT;
+	
+	final = salarioF + valorT + comissao;
+	
+	printf ("O valor total no fim do mes ?: %d  ", final);
+	
+	
+}
+
+void exe5(){
+	
+	int a, b, c, d, soma, media, produto;
+	
+	
+	printf ("\n""Insira um numero:   ");
+	scanf ("%d", &a);
+	
+	printf ("Insira um numero:   ");
+	scanf ("%d", &b);
+	
+	printf ("Insira um numero:    ");
+	scanf ("%d", &c);
+	
+	printf("Insira um numero:     ");
+	scanf ("%d", &d);
+	
+	soma = a + b + c + d;
+	
+	media = ( a + b + c + d)/4;
+	
+	produto = a * b * c * d;
+	
+	printf ("A soma desses valores e:  %d", soma);
+	
+	printf ("\n"" A media desses valores e:  %d", media);
+	
+	printf ("\n""O produto desses valores e:   %d", produto);
+}
+
+void exe6(){
+	
+		int idade, anos, meses, dias;
+	
+	printf("\n""Insira a idade:  ");
+	scanf ("%d", &idade);
+	
+	
+	anos = idade;
+	meses = anos * 12;
+	dias = meses * 30;
+	
+	printf ("\n""Ele tem em anos:   %d", anos);
+	
+	printf ("\n""Ele tem em meses:   %d", meses);
+	
+	printf ("\n""Ele tem em dias:  %d", dias);
+}
+
+void exe7(){
+	
+	int  volume, raio, p, R,v;
+	
+	printf ("\n""Insira o raio da esfera:   ");
+	scanf ("%d", &raio);
+	
+	p = 3.14159;
+	
+	R = pow(raio,3);
+	
+	v =( R * 4) /3;
+	
+	volume = v * p;
+	
+	printf ("O volume da esfera e:   %d", volume);
+	
+}
+
+void exe8(){
+	
+	int x1, x2, y1, y2, p1, p2;
+	float dis;
+	
+	printf ("\n""Insira o valor do par ordenado (x1,y1)");
+	scanf ("%d", &x1);
+	scanf ("%d", &y1);
+	
+	printf ("n""Insira o valor do par ordenado (x2,y2)");
+	scanf ("%d", &x2);
+	scanf ("%d", &y2);
+	
+	p1 = pow(x2 - x1,2);
+	p2 = pow(y2 - y1,2);
+	
+	dis = sqrt (p1 +p2);
+	
+	printf ("\n""A distancia entre p1 e p2 = %f", dis);
+	
+}
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int resposta;
+	printf("Qual quest�o deseja resolver?");
+	scanf("%d", &resposta);
+	switch (resposta){
+		
+	case 1:
+		exe1();
+	break;
+	
+	case 2:
+		exe2();
+	break;
+	
+	case 3:
+		exe3();
+	break;
+	
+	case 4:
+		exe4();
+	break;
+	
+	case 5:
+		exe5();
+	break;
+	
+	case 6:
+		exe6();
+	break;
+	
+	case 7:
+		exe7();
+	break;
+	
+	case 8:
+		exe8();
+	break;
+	
+	}
+	return 0;
+}
