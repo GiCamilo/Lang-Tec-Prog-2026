@@ -1,0 +1,50 @@
+//exercicio 1
+
+
+
+
+//exercicio 2
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	float VPA, VP, QA, PVP, PA;
+	
+	printf("Insira o valor patrimonial da empresa:  R$  ");
+	scanf("%f", &VP);
+	
+	printf("\nInsira a quantidade de ações disponiveis:  ");
+	scanf("%f", &QA);
+	
+	VPA=VP/QA;
+	
+	printf("\nO seu Valor patrimonial por ação é:  ", VPA);
+	
+	printf("\nInsira o preço atual da ação: R$  ");
+	scanf("%f", &PA);
+	
+	PVP = PA/VPA;
+	
+	if (PVP <0,0); 
+	  printf ("PESSIMA, %f",PVP);
+	if (0,0<=PVP<=0,8);
+	  printf ("OTIMA, %f", PVP);
+	if (0,8 <= PVP <= 1,2);
+	  printf ("INDIFERENTE, %d", PVP);
+    if (1,2 <= PVP <= 2,0);
+      printf ("BOA, %d", PVP);
+    if (PVP > 2,0);
+      printf ("RUIM, %d", PVP);
+	  
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
