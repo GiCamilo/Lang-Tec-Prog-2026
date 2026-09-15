@@ -1,43 +1,68 @@
-//exercicio 1
-
-
-
-
-//exercicio 2
-
 #include <stdio.h>
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+	
+	
+	
+	
+	//exercicio 1
+	
+	int A,B,C,D,aux1,aux2,aux3,aux4;
+	
+	printf ("INSIRA AS 4 VARIAVEIS: ");
+	scanf("%d %d %d %d", &A,&B, &C, &D);
+	
+	aux1 = A;
+	aux2 = B; 
+	aux3 = C;
+	aux4 = D;
+	C = aux1;
+	A = aux2;
+	D = aux3;
+	B = aux4;
+	
+	printf ("A permutacao fica:  %d %d %d %d", A,B,C,D);
+	
+	
+	//exercicio 2
 	float VPA, VP, QA, PVP, PA;
 	
-	printf("Insira o valor patrimonial da empresa:  R$  ");
+	printf("\nInsira o valor patrimonial da empresa:  R$  ");
 	scanf("%f", &VP);
 	
-	printf("\nInsira a quantidade de ações disponiveis:  ");
+	printf("\nInsira a quantidade de acoes disponiveis:  ");
 	scanf("%f", &QA);
 	
 	VPA=VP/QA;
 	
-	printf("\nO seu Valor patrimonial por ação é:  ", VPA);
+	printf("\nO seu Valor patrimonial por acao é:  %f", VPA);
 	
-	printf("\nInsira o preço atual da ação: R$  ");
+	printf("\nInsira o preço atual da acao: R$  ");
 	scanf("%f", &PA);
 	
 	PVP = PA/VPA;
 	
-	if (PVP <0,0); 
-	  printf ("PESSIMA, %f",PVP);
-	if (0,0<=PVP<=0,8);
-	  printf ("OTIMA, %f", PVP);
-	if (0,8 <= PVP <= 1,2);
-	  printf ("INDIFERENTE, %d", PVP);
-    if (1,2 <= PVP <= 2,0);
-      printf ("BOA, %d", PVP);
-    if (PVP > 2,0);
-      printf ("RUIM, %d", PVP);
+	if (PVP <0,0){
+	
+	  printf ("\nPESSIMA, %f",PVP);
+    }
+	if (0,0<=PVP<=0,8){
+	  printf ("\nOTIMA, %f", PVP);
+	  
+    }
+	if (0,8 <= PVP <= 1,2){
+	  printf ("\nINDIFERENTE, %d", PVP);
+	  
+   }
+    if (1,2 <= PVP <= 2,0){
+    	
+      printf ("\nBOA, %d", PVP);
+  }
+    if (PVP > 2,0){
+      printf ("\nRUIM, %d", PVP);}
 	  
 	
 	
