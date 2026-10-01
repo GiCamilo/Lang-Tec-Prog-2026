@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -260,6 +261,112 @@ void p1ex2(){
 	printf("Passo 7: %d %d %d\n", a, b, c);
 }
 
+void p2ex1(){
+	int a,b,c;
+ 
+ printf("Insira o numero A:  ");
+ scanf("%d", &a);
+ 
+ printf("Insira o numero B:  ");
+ scanf("%d", &b);
+ 
+ printf("Insira o numero C:  ");
+ scanf("%d", &c);
+	
+	
+	if (a==b || a==c || b==c){   // CORRECAO: testa cada par
+	
+	printf("OS numeros tem que ser distintos\n");
+}
+
+	  else if (a > b && a > c && b > c){
+	  
+    	printf ("A ordem fica, %d  %d %d\n", c,b,a);
+    }
+    
+	  else if (a > b && a > c && c > b){   // CORRECAO: caso que faltava
+	  
+    	printf ("  %d %d %d\n", b,c,a);
+    }
+	
+	  else if ( b> a && b>c && a>c){
+	  
+    	printf ("  %d %d %d\n", c,a,b);
+    }
+     
+	  else if ( b > a && b>c && c>a){
+	  
+    	printf ("  %d %d %d\n", a,c,b);
+    }
+   
+   	  else if ( c> a && c>b && a>b){
+		
+	   printf ("  %d %d %d\n", b,a,c);
+}
+	
+	  else if ( c >a && c> b && b>a){   // CORRECAO: removido o ; antes da {
+    	printf ("  %d %d %d\n", a,b,c);
+    }
+}
+
+void p2ex2(){
+	float valor1, valor2;
+	int codigo;
+	
+	// Leitura dos dois operandos e do codigo da operacao
+	printf("Insira o primeiro valor:  ");
+	scanf("%f", &valor1);
+	
+	printf("Insira o segundo valor:  ");
+	scanf("%f", &valor2);
+	
+	printf("Insira o codigo da operacao (1 >, 2 <, 3 ==, 4 !=):  ");
+	scanf("%d", &codigo);
+	
+	// Cada codigo testa uma operacao relacional entre valor1 e valor2
+	switch (codigo){
+		
+		case 1: // Maior que
+		if (valor1 > valor2){
+			printf("Verdadeiro\n");
+		}
+		else{
+			printf("Falso\n");
+		}
+		break;
+		
+		case 2: // Menor que
+		if (valor1 < valor2){
+			printf("Verdadeiro\n");
+		}
+		else{
+			printf("Falso\n");
+		}
+		break;
+		
+		case 3: // Igual a
+		if (valor1 == valor2){
+			printf("Verdadeiro\n");
+		}
+		else{
+			printf("Falso\n");
+		}
+		break;
+		
+		case 4: // Diferente de
+		if (valor1 != valor2){
+			printf("Verdadeiro\n");
+		}
+		else{
+			printf("Falso\n");
+		}
+		break;
+		
+		default: // Qualquer outro codigo
+		printf("operador invalido\n");
+	}
+}
+
 int main(int argc, char *argv[]) {
 	
 	int escolha_prova, escolha_ex;
@@ -297,7 +404,7 @@ int main(int argc, char *argv[]) {
 				case 3:
 				p1ex2();
 				break;		
-			} // CORRECAO: fecha o switch de exercicios da prova 1
+			} // fecha o switch de exercicios da prova 1
 
 		break;
 		
@@ -324,11 +431,38 @@ int main(int argc, char *argv[]) {
 				case 3:
 				ex02();
 				break;
+			} // fecha o switch de exercicios da prova 2
+
+		break;
+				
+		case 3:
+		printf("+-------------------------------------------+\n");
+		printf("|                 EXERCICIOS                |\n");
+		printf("+-------------------------------------------+\n");
+		printf("| Escolha um exercicio(1-2-3):              |\n");
+		printf("| 1 - EX 0                                  |\n");
+		printf("| 2 - EX 1                                  |\n");
+		printf("| 3 - EX 2                                  |\n");
+		printf("+-------------------------------------------+\n");		
+		scanf("%d", &escolha_ex);
+			switch (escolha_ex){
+			
+				case 1:
+				ex01();
+				break;
+				
+				case 2:
+				p2ex1();
+				break;
+				
+				case 3:
+				p2ex2();
+				break;
 		
-	}
+	} // fecha o switch de exercicios da prova 3
 	
 
-}
+} // fecha o switch de provas
 
 return 0;
 }
