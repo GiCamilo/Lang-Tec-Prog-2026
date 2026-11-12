@@ -62,8 +62,10 @@ int i,maior;
 para (i=0;i<10;i++){
 	scanf("%d",&vet[i]);
 }
-for(i=1, maior = vet[])
-	
+for(i=1, maior = vet[0]; i < 10; i++){
+		maior = calcula_maior(maior,vet[i]);
+}
+	printf("%d e o maior", maior);
 	
 	return 0;
 }
