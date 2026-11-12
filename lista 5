@@ -54,6 +54,15 @@ int main(int argc, char *argv[]) {
 	res = res/2;
 	
 	printf ("O numero %d em binario = %d%d%d%d%d%d%d", n, res%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+
+//exercicio 4 
+int main [10];
+int i,maior;
+
+para (i=0;i<10;i++){
+	scanf("%d",&vet[i]);
+}
+for(i=1, maior = vet[])
 	
 	
 	return 0;
